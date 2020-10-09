@@ -4,15 +4,22 @@ import { bindActionCreators } from "redux";
 import * as cartActions from "../../redux/actions/CartActions"
 import { Table,Button } from 'reactstrap';
 import alertify from "alertifyjs"
+import gif from "../../img/gif.2.gif"
+import "../../app.css"
 class CartDetail extends Component {
+
+
+
     removeFromCart(product){
         this.props.actions.removeFromCart(product);
         alertify.error(product.productName+ " Sepetten Kaldırıldı")
     }
     renderEmpty() {
         return (
-          
-            <h3 style={{textAlign:"center"}}>Sepetiniz Bos</h3>
+            <div style={{textAlign:"center"}}>
+            <img src={gif} alt="Sepetiniz BomBoos"  className="App-logo"/>
+            <h3 >Sepetiniz Bos</h3> 
+            </div>
           
         );
       }
