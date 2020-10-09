@@ -1,0 +1,12 @@
+.alertify-notifier .ajs-message.ajs-success{
+    color:white;
+   
+    border-radius: 10px;
+  }
+  .alertify-notifier .ajs-message.ajs-error{
+    color:white;
+    
+  }
+  /* .dropdown > .dropdown-toggle:hover  {
+    pointer-events: none;
+  } */
